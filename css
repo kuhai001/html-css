@@ -1,0 +1,203 @@
+/* 设置整个Markdown内容的字体大小、行高和字母间距 */
+.markdown-here-wrapper {
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+}
+
+
+/* 设置代码块和代码的字体大小、字体家族和左右外边距 */
+pre, code {
+  font-size: 14px;
+  font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
+  margin: auto 5px;
+}
+
+/* 设置代码的换行方式、边框圆角和显示方式 */
+code {
+  white-space: pre-wrap;
+  border-radius: 2px;
+  display: inline;
+}
+
+/* 设置代码块的字体大小、行高和显示方式，并强制覆盖其他样式 */
+pre {
+  font-size: 15px;
+  line-height: 1.4em;
+  display: block; !important;
+}
+
+/* 设置代码块内部代码的换行方式、溢出处理、边框圆角、内边距和显示方式，并强制覆盖其他样式 */
+pre code {
+  white-space: pre;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 1px 1px;
+  display: block !important;
+}
+
+/* 设置加粗文本的颜色 */
+strong, b{
+  color: #BF360C;
+}
+
+/* 设置斜体文本的颜色 */
+em, i {
+  color: #009688;
+}
+
+/* 设置水平分割线的样式 */
+hr {
+  border: 1px solid #BF360C;
+  margin: 1.5em auto;
+}
+
+/* 设置段落的外边距，并强制覆盖其他样式 */
+p {
+  margin: 1.5em 5px !important;
+}
+
+/* 设置表格、代码块、定义列表、块引用、引用、无序列表和有序列表的外边距 */
+table, pre, dl, blockquote, q, ul, ol {
+  margin: 10px 5px;
+}
+
+/* 设置无序列表和有序列表的左内边距 */
+ul, ol {
+  padding-left: 15px;
+}
+
+/* 设置列表项的外边距 */
+li {
+  margin: 10px;
+}
+
+/* 设置列表项内部段落的外边距，并强制覆盖其他样式 */
+li p {
+  margin: 10px 0 !important;
+}
+
+/* 设置嵌套列表的外边距和左内边距 */
+ul ul, ul ol, ol ul, ol ol {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* 设置无序列表的列表样式 */
+ul {
+  list-style-type: circle;
+}
+
+/* 设置定义列表的样式 */
+dl {
+  padding: 0;
+}
+
+/* 设置定义列表的标题样式 */
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* 设置定义列表的描述样式 */
+dl dd {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+
+/* 设置块引用和引用的样式 */
+blockquote, q {
+  border-left: 2px solid #009688;
+  padding: 0 10px;
+  color: #777;
+  quotes: none;
+  margin-left: 1em;
+}
+
+/* 移除块引用和引用的引号内容 */
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+
+/* 设置标题的样式，包括外边距、内边距、字体样式、颜色和对齐方式，并强制覆盖其他样式 */
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-style: bold !important;
+  color: #009688 !important;
+  text-align: center !important;
+  margin: 1.5em 5px !important;
+  padding: 0.5em 1em !important;
+}
+
+/* 设置一级标题的字体大小和边框样式，并强制覆盖其他样式 */
+h1 {
+  font-size: 24px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+/* 设置二级标题的字体大小和边框样式，并强制覆盖其他样式 */
+h2 {
+  font-size: 20px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+/* 设置三级标题的字体大小 */
+h3 {
+  font-size: 18px;
+}
+
+/* 设置四级标题的字体大小 */
+h4 {
+  font-size: 16px;
+}
+
+
+/* 设置表格的样式，包括内边距、边框折叠、字体大小和边框样式 */
+table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+/* 设置表格主体的样式 */
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 设置表格行的样式 */
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* 设置偶数行的背景颜色 */
+table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+/* 设置表格单元格的样式 */
+table tr th, table tr td {
+  font-size: 16px;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+/* 设置表头的样式 */
+table tr th {
+  font-weight: bold;
+  color: #eee;
+  border: 1px solid #009688;
+  background-color: #009688;
+}
